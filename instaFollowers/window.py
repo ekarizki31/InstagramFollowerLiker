@@ -6,9 +6,9 @@ import json
 class MyWindow:
     def __init__(self, win):
         self.win = win
-        self.lbl1=Label(win, text='Email')
-        self.lbl2=Label(win, text='Password')
-        self.lbl3=Label(win, text='Hashtag')
+        self.lbl1=Label(win, text='Your Email')
+        self.lbl2=Label(win, text='Your Password')
+        self.lbl3=Label(win, text='Insert Hashtag')
         self.lbl4=Label(win, text='Error: Please fill empty fields')
 
         self.email = self.t1=Entry()
@@ -60,3 +60,4 @@ mywin=MyWindow(window)
 window.title('Instagram bot')
 window.geometry("500x300+10+10")
 window.mainloop()
+#----My Changes
