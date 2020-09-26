@@ -6,9 +6,9 @@ import json
 class MyWindow:
     def __init__(self, win):
         self.win = win
-        self.lbl1=Label(win, text='Email')
-        self.lbl2=Label(win, text='Password')
-        self.lbl3=Label(win, text='Hashtag')
+        self.lbl1=Label(win, text='Your Email')
+        self.lbl2=Label(win, text='Your Password')
+        self.lbl3=Label(win, text='Insert Hashtag')
         self.lbl4=Label(win, text='Error: Please fill empty fields')
 
         self.email = self.t1=Entry()
@@ -22,8 +22,8 @@ class MyWindow:
         self.t2.place(x=200, y=100)
         self.lbl3.place(x=100, y=150)
         self.t3.place(x=200, y=150)
-        self.b1=Button(win, text='Quit', command=self.stop_program)
-        self.b2=Button(win, text='Run', command= self.runprogram)
+        self.b1=Button(win, text='Close', command=self.stop_program)
+        self.b2=Button(win, text='Start', command= self.runprogram)
         self.b2.bind('<Button-1>')
         self.b1.place(x=100, y=200)
         self.b2.place(x=200, y=200)
@@ -57,6 +57,7 @@ def start_program():
 window=Tk()
 start_program()
 mywin=MyWindow(window)
-window.title('Instagram bot')
+window.title('Bot Instagram')
 window.geometry("500x300+10+10")
 window.mainloop()
+#-----My Changes
